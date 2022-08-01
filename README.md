@@ -1,6 +1,6 @@
 # Desafio :alien: LarnU :alien: Proyecto Final Modulo 01!
 
-Desafio Final Módulo 01 del Bootcamp LarnU.
+Desafio Final Módulo 01 del Bootcamp LarnU. Aplicando los conocimientos de HTML y CSS visto a lo largo del primer módulo.
 
 # Github Page :link:
 
