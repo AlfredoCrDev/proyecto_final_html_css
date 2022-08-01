@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  font-family:'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   --azulclaro-logo: #2a3390;
   --azuloscuro-logo: #221e61;
 }
@@ -12,14 +12,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: gainsboro;
+}
+
 nav {
   margin-top: 20px;
-  display: grid; 
-  grid-template-columns: 1fr 2fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "home logo about";
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "home logo about";
 }
 
 nav a {
@@ -30,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color:var(--azulclaro-logo);
+  background-color: var(--azulclaro-logo);
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -39,21 +42,21 @@ nav a:hover {
   color: white;
 }
 
-.nav-home { 
+.nav-home {
   grid-area: home;
-  justify-self: center; 
+  justify-self: center;
   align-self: center;
 }
 
-.nav-logo { 
-  grid-area: logo; 
-  justify-self: center; 
-  align-self: center; 
+.nav-logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: center;
 }
 
-.nav-about { 
+.nav-about {
   grid-area: about;
-  justify-self: center; 
+  justify-self: center;
   align-self: center;
   text-align: center;
 }
@@ -80,20 +83,22 @@ nav a:hover {
 .container-center__form {
   border: 1px solid black;
   border-radius: 15px;
-  width: 80vw;
-  padding: 20px;
-  -webkit-box-shadow: 5px 5px 30px 10px #000000; 
+  width: 60vw;
+  padding: 25px;
+  -webkit-box-shadow: 5px 5px 30px 10px #000000;
   box-shadow: 5px 5px 30px 1px #000000;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .container-center__form input {
   display: block;
   width: 100%;
   height: 30px;
   border-radius: 5px;
+  background-color: white;
 }
 
-.container-center__form p, label {
+.container-center__form p,
+label {
   font-weight: bold;
   text-align: left;
 }
@@ -102,3 +107,253 @@ nav a:hover {
   color: red;
 }
 
+.img-txt {
+  margin-top: 30px;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "img1"
+    "txt1"
+    "img2"
+    "txt2"
+    "img3"
+    "txt3";
+}
+
+.img-txt img {
+  width: 375px;
+  height: auto;
+}
+
+.img-txt p {
+  font-weight: lighter;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.img-txt h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.img-txt__txt {
+  margin-bottom: 20px;
+}
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt1 {
+  grid-area: txt1;
+  margin-bottom: 30px;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.txt2 {
+  grid-area: txt2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.txt3 {
+  grid-area: txt3;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  background-color: #292c2f;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+  margin: 4px;
+}
+
+.main-about p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+@media (min-width: 850px) {
+  .container-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  .container-center__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container-center__form {
+    width: 35vw;
+    height: 65vh;
+  }
+
+  .btn-contact {
+    width: 20vw;
+    height: 7vh;
+  }
+
+  .img-txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "img1 txt1"
+      "txt2 img2"
+      "img3 txt3";
+    justify-items: center;
+    align-items: center;
+  }
+
+  .img-txt img {
+    width: 600px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .img-txt img {
+    width: 750px;
+    height: auto;
+  }
+
+  .img-txt__txt {
+    font-size: 1.8rem;
+  }
+
+  .container-center__texto {
+    font-size: 1.8rem;
+  }
+
+  .container-center__form {
+    font-size: 1.1rem;
+    padding: 80px;
+  }
+
+  .main-about {
+    margin: 3px;
+    line-height: 3;
+  }
+
+  .container-center {
+    margin-bottom: 4%;
+  }
+}
